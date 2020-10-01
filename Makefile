@@ -9,8 +9,11 @@ dvi: ${TARGET}.tex
 ps: dvi
 	dvips -R -Poutline -t letter ${TARGET}.dvi -o ${TARGET}.ps
 
-pdf: ps
-	ps2pdf ${TARGET}.ps
+pdf:
+	pdflatex ${TARGET}.tex
+
+open: pdf
+	open ${TARGET}.pdf
 
 clean:
 	rm *.aux
