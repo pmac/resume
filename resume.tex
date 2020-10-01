@@ -20,143 +20,184 @@
 \input{preamble}
 \begin{document}
 
-\centerline{{\Huge \bf E. Dunham}}
+\centerline{{\Huge \bf Paul McLanahan}}
 
 \bigskip
 
-\contact{resume@edunham.net}
-        {edunham.net}
-        {github.com/edunham}
-        {Portland, Oregon \& Remote}
+\contact{\href{mailto:pmac@pmac.io}{pmac@pmac.io}}
+        {\href{https://pmac.io}{pmac.io}}
+        {\href{https://github.com/pmac}{github.com/pmac}}
+        {Atlanta, Georgia \& Remote}
 
 \heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\center
+\emph{Software Engineer with 12 years of experience building and deploying Python web applications}
+\linebreak
+\emph{and 20 years total in the web technology space}
+\endcenter
+
 \skill{Systems Administration}
-      {Terraform, K8s, Docker, AWS, GCP, TravisCI, Ansible, Puppet}
+      {Linux, K8s, Docker, AWS, GCP, TravisCI, CircleCI, GitLabCI}
 
 \skill{Development}
-      {Python, Bash, Rust, HTML/CSS/Javascript}
-
-\skill{Community}
-      {Teaching, public speaking, event planning, curriculum design}
+      {Python, Django, SQL, Bash, HTML/CSS/Javascript}
 
 \skill{Collaboration}
-      {IRC/Slack, Git \& GitHub, Sphinx, Pandoc, Jira/RT/Bugzilla}
-
-%\skill{Robotics}
-%      {Mechanical design \& prototyping, 3D modeling, OpenCV, Arduino}
+      {IRC/Slack, Git \& GitHub, Sphinx, Bugzilla}
 
 \heading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
 \squish
-\experience{PagerDuty}
-           {Senior Site Reliability Engineer}
-           {06/2020 - present}
+\experience{Mozilla}
+           {Staff Backend Software Engineer}
+           {08/2019 - present}
 
-Python, Chef, AWS, Terraform. Support and improve essential internal services. 
+Helped our small team develop new CI pipelines using GitLabCI and task runners in our own AWS infrastructure.
+These runners build our Docker images, update k8s deployments, and run unit and integration tests.
+
+Implemented a new l10n system for \href{https://github.com/mozilla/bedrock/}{www.mozilla.org} (www.m.o) for over 100 languages, moving the site from custom .lang file format to Fluent files to support
+the l10n systems and teams in use around Mozilla.
 
 \experience{Mozilla}
-           {Operations Engineer}
-           {08/2018 - 05/2020}
+           {Senior Web Developer}
+           {10/2013 - 08/2019}
 
-Primary ops engineer in refactor and migration of Taskcluster build system 
-from developer ownership to Cloud Operations team. Collaborated with multiple
-teams to improve service architecture, standardize on Terraform and 
-Kubernetes workflow for GCP, improve monitoring and reliability. 
+Worked as technical lead for the www.m.o and \href{https://github.com/mozmeao/basket/}{basket.m.o} projects for backend development.
 
-Migrate Amazon Web Services hosted infrastructure to Google Cloud Platform
+Moved www.m.o to a hybrid-static site still using Django but
+\href{https://mozilla.github.io/meao/2018/03/28/bedrock-the-sqlitening/}{relying on pre-built read-only SQLite files} for
+data distribution.
 
-On-call to directly support service developers
+Helped move our infra from Deis to pure kubernetes (k8s) by doing a lot of work on the apps and deployment scripts,
+as well as \href{https://mozilla.github.io/meao/2018/02/27/django-k8s-elb-health-checks/}{developing and releasing django-allow-cidr}.
 
-Design and deploy development and production environments for multiple services
+Moved www.m.o assets pipeline from django-pipeline to Gulp using separate Docker images for each and browser-sync to serve the assets
+and proxy the Django app.
 
-\experience{Mozilla Research}
-           {DevOps Engineer \& Rust Evangelist}
-           {05/2015 - 08/2018}
+Lead the technical work for \href{https://blog.mozilla.org/webdev/2014/04/28/celebrating-the-web-we-want/}{webwewant.m.o},
+an application that geolocated IPs and showed downloads of Firefox 29 on a map.
 
-Improved hosting and continuous integration infrastructure for teams
-including Rust, Servo, \& VR.
+Built the publishing system for Mozilla Foundation Security Advisories for use by the security team that takes
+\href{https://github.com/mozilla/foundation-security-advisories}{Markdown or YAML files in a repo} and turns them into
+\href{https://www.mozilla.org/en-US/security/advisories/}{the /security/ section of www.m.o}.
 
-Configured systems using SaltStack, Ansible, Docker, Terraform.
+Developed an \href{https://github.com/mozilla/nucleus/}{administration platform} and
+\href{https://github.com/mozilla/release-notes/}{data exchange} system for
+\href{https://www.mozilla.org/en-US/firefox/releases/}{Firefox release notes} management.
 
-Maintained BuildBot deployment on Linux, Windows, and OS X hosts (physical and
-AWS servers).
+Developed the standard for \href{https://www.contributejson.org/}{contribute.json} files in repos and on websites.
 
-Deployed security best practices, including migrating 2 teams to 1password.
+\experience{Mozilla}
+           {Web Developer}
+           {01/2012 - 10/2013}
 
-Presented over 20 talks on Rust and Servo, including RustFest Kyiv closing keynote.
+Worked with various teams to improve and maintain web applications including mozillians.org, mozillalabs.com, and developer.m.o.
 
-\experience{Urban Airship}
-           {Operations Team Intern}
-           {06/2014 - 09/2014}
+Worked on the transition of www.m.o from PHP to a Python/Django application.
 
-Migrated services using Chef and Jenkins to facilitate datacenter move.
+Worked on basket.m.o to add support for the SMS api from ExactTarget.
 
-Led interdisciplinary Hack Week team to develop Flask frontend to internal
-LDAP API.
+Developed and deployed \href{https://github.com/mozilla/scrumbugz}{scrumbu.gs}, a site that
+\href{https://blog.mozilla.org/webdev/2012/03/27/scrum-and-bugzilla/}{gathered Scrum data from bugs in bugzilla.m.o and graphed it} for teams in
+need of that sort of thing.
 
-Audited and improved documentation for over 30 internal Java, Go, and Python
-services.
+\experience{MetaMetrics Inc.}
+           {Software Engineer}
+           {01/2010 - 12/2011}
 
-\experience{OSU Open Source Lab}
-           {Student Systems Administrator}
-           {12/2012 - 06/2014}
+Developed web applications around the company's core educational measurement technologies.
 
-Solved hardware and software problems for over 100 hosted projects.
+Worked on a team to develop and launch engagingenglish.com, a site that aggregates content from across the internet,
+measures it for text complexity, and recommends it to users based on their reading skill level and interests.
 
-\experience{Intel}
-           {Software Enabling Group USB3 Team Intern}
-           {06/2012 - 09/2012}
+Developed internal web-based tools to increase efficiency and decrease errors for other teams.
 
-Collaborated using agile development with scrum methodology.
+All development work was done with Python and Django, using many 3rd party libraries including South and Haystack
+(in front of Solr), and using MySQL or PostgreSQL for persistence depending on the project.
 
-Prototyped solution to double Android USB3 throughput with Java, C, \CPP.
+\pagebreak
+
+\experience{Intuit}
+           {Software Engineer}
+           {2007 - 2009}
+
+Helped design and build a master configuration management system for all Digital Insight products.
+The system manages configuration files, databases, and product files across multiple network tiers and server architectures.
+All of the web-based interfaces were built with Python/Django using jQuery for client side JS.
+
+Wrote and maintained a variety of CLI and web-based tools to help our web and technical support teams do their jobs more efficiently.
+These were built using a variety of technologies including Python, Django, Perl, PHP, and MySQL, and deployed to Debian GNU/Linux and AIX.
+
+\experience{Digital Insight}
+           {Senior Web Developer}
+           {2005 - 2007}
+
+Helped both build, and manage the building of websites on a variety of platforms from flat files on a Unix server,
+to XML/XSLT based sites running on Apache Cocoon. I pioneered the effort to use jQuery as our standard JS library,
+and wrote several jQuery plugins to aid our development process. As Sr. Developer, I was also responsible for
+maintaining the quality and quantity of the work of the entire team. I also installed, configured, and maintained
+the two Ubuntu development servers the team used to host our sites in devlopment as well as the tools we developed
+to aid in site development.
+
+\experience{SmallBizPros Inc.}
+           {IT Specialist}
+           {2004 - 2005}
+
+Developed accounting and server management software using Perl, PHP, and PowerBuilder.
+
+Installed and managed the Linux server infrastructure for the company providing web and email services.
+
+\experience{Digital Insight}
+           {Web Author}
+           {2002 - 2004}
+
+Built marketing websites for banks and credit unions using just HTML, Javascript, and CSS.
+
+\experience{Northeast Georgia Internet Access}
+           {Support Engineer and Web Developer}
+           {2000 - 2001}
+
+Provided phone and in-person technical support for dial-up and DSL internet customers.
+
+Built custom web sites for web hosting customers using ColdFusion, HTML, and Javascript.
 
 \end{description}
 
-\heading{Community}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{FLOSS Projects}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\project{\href{https://github.com/pmclanahan/django-celery-email}{django-celery-email}}
+        {}
+        {Send emails async from Django using Celery}
+
+\project{\href{https://github.com/pmac/django-redirect-urls}{django-redirect-urls}}
+        {}
+        {Redirects for Django sites in code, not DB}
+
+\project{\href{https://github.com/pmac/urlwait}{urlwait}}
+        {}
+        {Waits for a service defined in a URL in the environment to become available}
+
+\project{\href{https://github.com/pmac/dokku-webhook-deploy}{dokku-webhook-deploy}}
+        {}
+        {Use Dokku to auto-deploy branches pushed to Github}
+
+\heading{Education}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{description}
 \squish
-\experience{PDX Rust Users Group}
-           {Organizer}
-           {2015 - 2017}
+\experience{University of Georgia}
+           {Master of Internet Technology}
+           {2001 - 2002}
 
-Organized monthly meetups, communicated users' feedback to Rust core team.
+Intense masters program setup as a collaboration between the MIS  and CS departments.
 
-\experience{Rust Community Team}
-           {Volunteer}
-           {2016 - 2018}
+\experience{University of Georgia}
+           {Bachelor of Science - Cellular Biology}
+           {1995 - 1999}
 
-Represented Rust project at events. Produced \& distributed stickers, plushies, training resources.
-
-\experience{OSU DevOps Bootcamp}
-           {Founder}
-           {2013 - 2015}
-
-Designed and implemented comprehensive systems engineering curriculum.
-
-Distributed Apache 2.0 licensed curriculum (devopsbootcamp.osuosl.org)
-
-\experience{OSU Linux Users Group}
-           {President}
-           {2012 - 2014}
-
-Organized weekly meetings, mentored students in FOSS involvement
-
-\end{description}
-
-\heading{Academics}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{description}
-\squish
-\experience{Oregon State University}
-           {}
-           {2010-2015}
-
-Upper-division coursework in Computer Science including Operating Systems,\\
-Software Engineering, Analysis of Algorithms, Cryptography, and Applied Robotics.
+Undergraduate work in genetics and developmental biology.
 
 \end{description}
 

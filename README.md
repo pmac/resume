@@ -1,15 +1,15 @@
 resume
 ======
 
-This is both my personal resume and an example of a DevOps Engineer's
-technical resume.
+This is my fork of [edunham's resume](https://github.com/edunham/resume).
+For an excellent resume resource and some good LaTeX info head on over there.
 
 The LaTeX code is licensed under the MIT license, to prevent any ambiguity
 about the fact that you are welcome to copy it and use it for whatever
 purposes you like. The intended purpose is to make your own resume pretty
 without having to think very much about LaTeX.
 
-See my advice at http://lug.oregonstate.edu/blog/resume/ for other technical
+See edunham's advice at http://lug.oregonstate.edu/blog/resume/ for other technical
 resume tips.
 
 How to use
@@ -23,34 +23,6 @@ formatting.
 
 Your document's appearance will rarely change when you mess with indentation
 in the source, but will often change if you add or remove a blank line.
-
-How to share
-------------
-
-If you're using this repo as a template for your own resume, I recommend *not*
-creating a fork. GitHub seems to intend forks to mean code which will ever get
-merged back into the origin.
-
-Instead, make an *empty* repository in your own github account called
-`resume`, then:
-
-```
-yourcomputer$ git clone git@github.com:edunham/resume.git
-yourcomputer$ cd resume
-yourcomputer$ ed resume.tex # put your own stuff in
-yourcomputer$ ed README.md # take out the stuff that only applies to edunham
-yourcomputer$ git commit -am "Added my accomplishments"
-yourcomputer$ git remote add me git@github.com:YOURUSERNAME/resume.git
-yourcomputer$ git push me master
-```
-
-You can also `git config -e` to change the URLs so that your repo is `origin`
-and my remote is `edunham`, for simplicity's sake.
-
-This way you'll get credit on the contributions graph for changes you make.
-
-If you just want to hack on the LaTeX code that builds the resume then PR it
-back, go ahead and fork. But that's probably not your use case.
 
 Job Search Links
 ================
@@ -71,17 +43,6 @@ Job Search Links
 * [Hiring-Without-Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
   repo lists a whole lot of companies with "unconfentional" interview
   techniques
-
-
-Portland-specific job aggregators
-=================================
-
-* Meet people at events on [Calagator](http://calagator.org/).
-* [pdxpipeline](http://pdxpipeline.com/jobs/) has tech and non-tech listings
-* [Silicon Florist](http://siliconflorist.com/jobs/) has salaried and hourly
-  tech postings
-* [portlandtech](http://portlandtech.org/) has a bunch of poorly formatted
-* postings, and some useful sidebar links
 
 Interview Prep and Company Research Links
 =========================================
@@ -108,7 +69,6 @@ Money Stuff
 * dig through [this spreadsheet](https://docs.google.com/spreadsheets/d/1-CqO6Px-0yA2421OOtJoj69_MO564XvddDYDNfHuS7A/edit#gid=999557069) if you have free time
 * [#talkpay](https://twitter.com/search?q=%23talkpay)
 * [Comparably](https://www.comparably.com/)
-
 
 LaTeX Links
 ===========
